@@ -1,0 +1,24 @@
+.contact-us-container {
+    max-width: 500px; /* Adjust as per your layout */
+    margin:  auto; /* Center align horizontally */
+    padding: 20px;
+    background-color: #dfd8d8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+  
+  p,h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  

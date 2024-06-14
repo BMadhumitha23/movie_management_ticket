@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Joan', serif;
+}
+
+a {
+    text-decoration: none;
+    color: #adadad;
+}
+
+.btn {
+    display: inline-block;
+    padding: .5rem 1rem;
+    background-color: #575557;
+    border-radius: 2rem;
+    color: #1e1f26;
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: #3d3c3d;
+}
+
+.btn-l {
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    background-color: #434345;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+/* Top bar */
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    background-image: url('/assets/a1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #eeecec;
+}
+
+.left-content,
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    margin-right: 3rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px black;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    margin-right: 1rem;
+}
+
+.navigation li a {
+    color: #adadad;
+    transition: color 0.3s;
+}
+
+.navigation li a:hover {
+    color: #fff;
+}
+
+.active {
+    color: #cec7c7;
+}
+
+/* Main container */
+
+.main-container {
+    color: #adadad;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* General styling */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #aba5a5;
+}
+
+p {
+    color: #adadad;
+}
+
+/* Contact Us */
+
+.contact-info {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+    .title {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .navigation {
+        margin-top: 1rem;
+    }
+    .navigation li {
+        margin-right: 0.5rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
